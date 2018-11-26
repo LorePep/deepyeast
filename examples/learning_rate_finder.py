@@ -19,7 +19,7 @@ class LearningRateFinder:
         K.set_value(self.model.optimizer.lr, start_lr)
 
         iters_per_epoch = x_train.shape[0] // batch_size
-        for i in xrange(iters):
+        for i in range(iters):
             # get batch
             j = i % (iters_per_epoch - 1)
             ix_start = j * batch_size

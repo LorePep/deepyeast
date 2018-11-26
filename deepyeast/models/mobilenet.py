@@ -1,6 +1,5 @@
 from keras.models import Model
-from keras.layers import Input, Conv2D, GlobalAveragePooling2D, BatchNormalization, Activation, Dense
-from keras.applications.mobilenet import DepthwiseConv2D
+from keras.layers import Input, Conv2D, GlobalAveragePooling2D, BatchNormalization, Activation, Dense, DepthwiseConv2D
 
 def preprocess_input(x):
         x /= 255.
